@@ -100,7 +100,7 @@ namespace GHook
         {
             while (true)
             {
-                SpoofProcess(processName, "Tropical.cc " + RandomString(150));
+                SpoofProcess(processName, RandomString(150));
                 Process[] pro = Process.GetProcessesByName(processName);
                 if (pro.Length < 1)
                     Environment.Exit(5);
